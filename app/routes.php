@@ -11,9 +11,12 @@
 |
 */
 
+//echo Hash::make('alohas123');
+
 Route::get('/', function()
 {
-	return View::make('hello');
+	//return View::make('hello');
+	return Redirect::to('/profesores');
 });
 
 Route::get('/login', array(

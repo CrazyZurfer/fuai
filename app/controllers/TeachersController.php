@@ -58,7 +58,8 @@ class TeachersController extends \BaseController {
 
 		$teacher = Teacher::create($data);
 
-		return $teacher;
+		//return $teacher;
+		return Redirect::to('/profesores');
 	}
 
 	/**
@@ -69,13 +70,15 @@ class TeachersController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		$teacher = Teacher::with('courses')->findOrFail($id);
-		$grades = DB::Select(
+		$teacher = Teacher::findOrFail($id)->toArray();
+		/*$grades = DB::Select(
 			DB::Raw('SELECT AVG(grade) as avg from grades Where teacher_id = :teacherid'),
 			array('teacherid' => $teacher->id)
 		);
 		$teacher->avg = $grades[0]->avg;
-		return $teacher;
+		*///return $teacher;
+		return View::make('teacher', $teacher);
+
 	}
 
 	/**

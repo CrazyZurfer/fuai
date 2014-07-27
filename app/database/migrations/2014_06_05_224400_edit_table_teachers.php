@@ -17,6 +17,9 @@ class EditTableTeachers extends Migration {
         	$table->dropColumn('content');
             $table->text('nickname');
             $table->text('methodology');
+            $table->text('image');
+            $table->text('studies');
+            $table->text('publications');
             $table->text('phrases');
             $table->text('freak');
         });
@@ -33,6 +36,9 @@ class EditTableTeachers extends Migration {
         {
             $table->dropColumn('nickname');
             $table->dropColumn('methodology');
+            $table->dropColumn('image');
+            $table->dropColumn('studies');
+            $table->dropColumn('publications');
             $table->dropColumn('phrases');
             $table->dropColumn('freak');
             $table->text('content');
