@@ -9,7 +9,7 @@ class Teacher extends NLJModel {
 	];
 
 	//fillable attributes using Class::create($attributes)
-	protected $fillable = ['name', 'last_name', 'nickname', 'methodology', 'phrases', 'freak'];
+	protected $fillable = ['name', 'last_name', 'nickname', 'methodology', 'image', 'studies', 'publications', 'phrases', 'freak'];
 
 	//searchable attributes
 	protected $searchable = [

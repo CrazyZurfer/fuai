@@ -47,7 +47,7 @@
 		</div>
 		<div class="form-group">
 		    <label for="freak">Datos Freak</label>
-			<textarea type="text" class="form-control" id="freak" name="freak" placeholder="Vive más cerca de viña que de santiago"> {{ $teacher['freak'] or '' }} </textarea>
+			<textarea type="text" class="form-control" id="freak" name="freak" placeholder="Vive más cerca de viña que de santiago">{{ $teacher['freak'] or '' }}</textarea>
 		</div>
 		<button class="btn btn-lg btn-primary btn-block" type="submit">{{ $title }}</button>
 	</form>

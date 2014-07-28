@@ -10,9 +10,6 @@
 | and give it the Closure to execute when that URI is requested.
 |
 */
-
-//echo Hash::make('alohas123');
-
 Route::get('/', function()
 {
 	//return View::make('hello');
