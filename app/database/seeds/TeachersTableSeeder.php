@@ -1,5 +1,5 @@
 <?php
-
+/*
 use PHPHtmlParser\Dom;
 use Feuai\Teachers\TeachersRepositoryInterface;
 
@@ -98,3 +98,4 @@ class TeachersTableSeeder extends Seeder {
 		return $text;
 	}
 }
+*/
